@@ -1,25 +1,25 @@
 .cc-wrap{
   max-width: 1080px;
   margin: 0 auto;
-  background: var(--ib-surface);
-  border: 1px solid var(--ib-border);
-  border-radius: var(--ib-radius-xl);
-  box-shadow: var(--ib-shadow);
+  background: #ffffff;
+  border: 1px solid rgba(20, 32, 51, 0.14);
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(20, 32, 51, 0.10);
   overflow: hidden;
 }
 
 .cc-topbar{
   padding: 14px 16px;
   background: linear-gradient(90deg, rgba(42,167,167,0.10), rgba(42,167,167,0.10));
-  border-bottom: 1px solid var(--ib-border);
+  border-bottom: 1px solid rgba(20, 32, 51, 0.14);
   display:flex;
   align-items:center;
   justify-content:space-between;
   gap: 12px;
 }
 
-.cc-title{ margin:0; font-size: 20px; color: var(--ib-text); }
-.cc-subtitle{ font-size: 14px; color: var(--ib-text-muted); margin-top: 2px; }
+.cc-title{ margin:0; font-size: 20px; color: #142033; }
+.cc-subtitle{ font-size: 14px; color: #5a667a; margin-top: 2px; }
 .cc-body{ padding: 16px; }
 
 .cc-headerrow{
@@ -30,13 +30,13 @@
   margin-bottom: 14px;
 }
 
-.cc-kickerline{ color: var(--ib-text-muted); font-size: 15px; }
+.cc-kickerline{ color: #5a667a; font-size: 15px; }
 .cc-head-actions{ display:flex; gap: 10px; flex-wrap: wrap; }
 
 .cc-headbtn{
-  border: 1px solid var(--ib-border);
-  background: var(--ib-surface);
-  color: var(--ib-text-muted);
+  border: 1px solid rgba(20, 32, 51, 0.14);
+  background: #ffffff;
+  color: #5a667a;
   border-radius: 999px;
   padding: 8px 12px;
   cursor:pointer;
@@ -47,7 +47,7 @@
 .cc-headbtn:hover{
   background: rgba(42,167,167,0.06);
   border-color: rgba(42,167,167,0.30);
-  color: var(--ib-text);
+  color: #142033;
 }
 
 .cc-slots{
@@ -116,8 +116,8 @@
 /* Back card image */
 .cc-cardimg{
   width: 100%;
-  height: 100%;
-  border-radius: 18px;
+  height: 100%!important;
+  border-radius: 18px!important;
   object-fit: contain;
   background: rgba(255,255,255,0.92);
   filter: drop-shadow(0 14px 22px rgba(20,32,51,0.18));
@@ -130,7 +130,7 @@
   width: 100%;
   height: 100%;
   border-radius: 18px;
-  background: var(--ib-surface);
+  background: #ffffff;
   border: 1px solid rgba(20,32,51,0.16);
   box-shadow: 0 12px 26px rgba(20,32,51,0.10);
   position: relative;
@@ -164,7 +164,7 @@
   line-height: 1.18;
   padding: 0 20px;
   margin: 0;
-  color: var(--ib-text);
+  color: #142033;
 }
 
 /* Placeholder */
@@ -180,19 +180,19 @@
   justify-content:center;
   gap: 6px;
   padding: 20px;
-  color: var(--ib-text-muted);
+  color: #5a667a;
 }
 .cc-dropzone-title{
   font-weight: 800;
-  color: var(--ib-text);
+  color: #142033;
   opacity: 0.75;
 }
 .cc-dropzone-sub{ font-size: 13px; }
 
 .cc-slotmeta{ padding: 30px 2px 0px 2px; }
-.cc-slotlabel{ font-size: 14px; font-weight: 800; color: var(--ib-text); }
-.cc-slotsub{ margin-top: 2px; font-size: 13px; color: var(--ib-text-muted); }
-.cc-slotcount{ margin-top: 6px; font-size: 13px; color: var(--ib-text-muted); }
+.cc-slotlabel{ font-size: 14px; font-weight: 800; color: #142033; }
+.cc-slotsub{ margin-top: 2px; font-size: 13px; color: #5a667a; }
+.cc-slotcount{ margin-top: 6px; font-size: 13px; color: #5a667a; }
 
 .cc-below{
   display:flex;
@@ -208,13 +208,13 @@
 .cc-helpbtn{
   border: 1px solid rgba(42,167,167,0.35);
   background: rgba(42,167,167,0.06);
-  color: var(--ib-text);
+  color: #142033;
   border-radius: 999px;
   padding: 10px 14px;
   cursor:pointer;
   font-size: 14px;
   font-weight: 650;
-  -webkit-text-fill-color: var(--ib-text);
+  -webkit-text-fill-color: #142033;
   transition: background 120ms ease, border-color 120ms ease, opacity 120ms ease;
 }
 .cc-helpbtn:hover{
@@ -226,7 +226,7 @@
   cursor: not-allowed;
 }
 
-.cc-progress{ font-size: 14px; color: var(--ib-text-muted); }
+.cc-progress{ font-size: 14px; color: #5a667a; }
 
 .cc-help{
   margin-top: 12px;
@@ -235,33 +235,33 @@
   background: rgba(42,167,167,0.06);
   padding: 12px;
 }
-.cc-help-title{ font-weight: 800; margin-bottom: 8px; color: var(--ib-text); }
+.cc-help-title{ font-weight: 800; margin-bottom: 8px; color: #142033; }
 .cc-help-grid{ display:grid; grid-template-columns: 1fr; gap: 10px; }
-.cc-help-block h4{ margin:0 0 6px; font-size: 14px; color: var(--ib-text); }
-.cc-help-block ul{ margin:0; padding-left: 18px; color: var(--ib-text); }
-.cc-muted{ color: var(--ib-text-muted); font-size: 13px; }
+.cc-help-block h4{ margin:0 0 6px; font-size: 14px; color: #142033; }
+.cc-help-block ul{ margin:0; padding-left: 18px; color: #142033; }
+.cc-muted{ color: #5a667a; font-size: 13px; }
 
 /* Menu styles */
 .cc-btn{
-  border: 1px solid var(--ib-border);
-  background: var(--ib-surface);
-  color: var(--ib-text);
+  border: 1px solid rgba(20, 32, 51, 0.14);
+  background: #ffffff;
+  color: #142033;
   border-radius: 14px;
   padding: 11px 14px;
   cursor:pointer;
   font-size: 14px;
   font-weight: 650;
-  -webkit-text-fill-color: var(--ib-text);
+  -webkit-text-fill-color: #142033;
 }
 .cc-btn.primary{
-  background: linear-gradient(180deg, var(--ib-primary), var(--ib-primary));
+  background: #27B99E;
   border-color: rgba(0,0,0,0);
   color: #fff;
   -webkit-text-fill-color: #fff;
 }
 
-.cc-h2{ margin: 0 0 8px; font-size: 24px; color: var(--ib-text); }
-.cc-sub{ margin: 0 0 14px; color: var(--ib-text-muted); }
+.cc-h2{ margin: 0 0 8px; font-size: 24px; color: #142033; }
+.cc-sub{ margin: 0 0 14px; color: #5a667a; }
 
 .cc-grid{
   display:grid;
@@ -269,15 +269,15 @@
   gap: 12px;
 }
 .cc-choice{
-  border: 1px solid var(--ib-border);
+  border: 1px solid rgba(20, 32, 51, 0.14);
   border-radius: 14px;
   padding: 14px;
-  background: var(--ib-surface-2);
+  background: #fbfbfd;
   cursor: pointer;
   text-align: left;
   transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
-  color: var(--ib-text);
-  -webkit-text-fill-color: var(--ib-text);
+  color: #142033;
+  -webkit-text-fill-color: #142033;
 }
 .cc-choice:hover{
   transform: translateY(-1px);
@@ -290,8 +290,8 @@
   justify-content:space-between;
   gap: 10px;
 }
-.cc-choice-title{ font-weight: 800; color: var(--ib-text); }
-.cc-choice-meta{ color: var(--ib-text-muted); font-size: 13px; }
+.cc-choice-title{ font-weight: 800; color: #142033; }
+.cc-choice-meta{ color: #5a667a; font-size: 13px; }
 
 /* End screen */
 .cc-end{ text-align:center; padding: 26px 16px; }

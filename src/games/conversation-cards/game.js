@@ -1,7 +1,18 @@
 import { el, clear } from "../../core/ui.js";
 
-const CARD_BACK_SRC = "/assets/card_back_01.svg";
-const CARD_SFX_SRC = "/assets/sfx/card-flip.mp3";
+/**
+ * Base-URL für Assets & Content:
+ * - WordPress Plugin setzt window.__IB_CC_BASE__ auf die Plugin-Asset-URL
+ * - Lokal (Vite) fällt es auf /games/conversation-cards/ zurück
+ *
+ * Wichtig: BASE endet immer mit einem Slash.
+ */
+const PUBLIC_BASE = (window.__IB_PUBLIC_BASE__ || "/").replace(/\/?$/, "/");
+const BASE = PUBLIC_BASE + "games/conversation-cards/";
+
+const CARD_BACK_SRC = BASE + "assets/card_back_01.svg";
+const CARD_SFX_SRC = BASE + "assets/sfx/card-flip.mp3";
+const CONTENT_URL = BASE + "content.json";
 
 const LEVEL_ICON = { beginner: "🌱", advanced: "🚀" };
 const TOPIC_ICON = {
@@ -12,7 +23,7 @@ const TOPIC_ICON = {
   lavoro: "💼",
   viaggi: "✈️",
   relazioni: "👥",
-  tecnologia: "📱",
+  tecnologia: "👥",
   cultura: "🎭",
   scuola: "🎓",
   salute: "🧘",
@@ -83,7 +94,7 @@ export class ConversationCards {
   }
 
   async loadContent() {
-    const res = await fetch("/games/conversation-cards/content.json", { cache: "no-store" });
+    const res = await fetch(CONTENT_URL, { cache: "no-store" });
     if (!res.ok) throw new Error("Impossibile caricare content.json");
     this.state.content = await res.json();
   }
@@ -262,8 +273,9 @@ export class ConversationCards {
       this.renderBoard();
     });
 
-    const stats = el("div", { class: "cc-progress" }, `Rimaste: ${this.state.deck.length} · Viste: ${this.state.discard.length}`);
-    below.append(helpBtn, stats);
+    //const stats = el("div", { class: "cc-progress" }, `Rimaste: ${this.state.deck.length} · Viste: ${this.state.discard.length}`);
+    //below.append(helpBtn, stats);
+    below.append(helpBtn);
 
     const wrap = el("div", {}, headerRow, slots, below);
     if (this.state.showHelp && top && top.help) wrap.append(this.helpPanel(top.help));
@@ -283,10 +295,7 @@ export class ConversationCards {
 
     this.isAnimating = true;
 
-    // the card we will draw (so front can show real question)
     const nextCard = this.state.deck[0];
-
-    // play real SFX
     this.playSfx();
 
     const leftStack = this.root.querySelector('[data-stack="left"]');
@@ -308,7 +317,6 @@ export class ConversationCards {
     const endX = endRect.left + endRect.width / 2;
     const endY = endRect.top + endRect.height / 2;
 
-    // overlay with 2 faces: back (svg) and front (text)
     const fly = el("div", { class: "cc-flycard" },
       el("div", { class: "cc-flyinner" },
         el("div", { class: "cc-flyface cc-flyback" },
@@ -330,25 +338,21 @@ export class ConversationCards {
     fly.style.left = `${startX - w / 2}px`;
     fly.style.top = `${startY - h / 2}px`;
 
-    fly.getBoundingClientRect(); // layout flush
+    fly.getBoundingClientRect();
 
-    // fly to right
     fly.classList.add("is-flying");
     fly.style.left = `${endX - w / 2}px`;
     fly.style.top = `${endY - h / 2}px`;
 
-    // flip mid-flight
     await this.sleep(190);
     fly.classList.add("is-flipped");
 
-    // commit state near landing: now right pile shows the same question
     await this.sleep(210);
     const next = this.state.deck.shift();
     this.state.discard.unshift(next);
     this.state.showHelp = false;
     this.renderBoard();
 
-    // cleanup overlay
     await this.sleep(120);
     fly.classList.add("is-fading");
     await this.sleep(120);
