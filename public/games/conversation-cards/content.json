@@ -1,0 +1,436 @@
+{
+  "gameId": "conversation-cards",
+  "title": "Carte di conversazione",
+  "levels": [
+    {
+      "id": "beginner",
+      "label": "Livello base",
+      "topics": [
+        {
+          "id": "vacanze",
+          "label": "In vacanza",
+          "cards": [
+            {
+              "q": "Dove sei andato/a nell’ultima vacanza?",
+              "help": {
+                "starter": [
+                  "Sono andato/a a …",
+                  "L’ultima vacanza l’ho fatta a …"
+                ],
+                "structures": [
+                  "l’anno scorso",
+                  "la scorsa estate",
+                  "di recente"
+                ],
+                "lexicon": [
+                  "viaggio",
+                  "mare",
+                  "montagna",
+                  "città"
+                ]
+              }
+            },
+            {
+              "q": "Con chi sei andato/a in vacanza?",
+              "help": {
+                "starter": [
+                  "Sono andato/a con …",
+                  "Ci sono andato/a da solo/a."
+                ],
+                "structures": [
+                  "insieme a",
+                  "con",
+                  "senza"
+                ],
+                "lexicon": [
+                  "famiglia",
+                  "amici",
+                  "partner"
+                ]
+              }
+            },
+            {
+              "q": "Che cosa hai fatto durante la vacanza?",
+              "help": {
+                "starter": [
+                  "Ho visitato …",
+                  "Ho fatto …"
+                ],
+                "structures": [
+                  "prima … poi …",
+                  "durante il giorno"
+                ],
+                "lexicon": [
+                  "visitare",
+                  "rilassarsi",
+                  "camminare"
+                ]
+              }
+            },
+            {
+              "q": "Com’era il tempo?",
+              "help": {
+                "starter": [
+                  "Faceva caldo/freddo.",
+                  "C’era il sole."
+                ],
+                "structures": [
+                  "quasi sempre",
+                  "a volte"
+                ],
+                "lexicon": [
+                  "sole",
+                  "pioggia",
+                  "vento"
+                ]
+              }
+            },
+            {
+              "q": "Ti è piaciuta la vacanza? Perché?",
+              "help": {
+                "starter": [
+                  "Sì, mi è piaciuta molto.",
+                  "No, non tanto."
+                ],
+                "structures": [
+                  "perché",
+                  "soprattutto"
+                ],
+                "lexicon": [
+                  "divertente",
+                  "rilassante",
+                  "interessante"
+                ]
+              }
+            },
+            {
+              "q": "Cosa ti è piaciuto di più?",
+              "help": {
+                "starter": [
+                  "Mi è piaciuto di più …"
+                ],
+                "structures": [
+                  "più di tutto"
+                ],
+                "lexicon": [
+                  "il cibo",
+                  "il posto",
+                  "la gente"
+                ]
+              }
+            },
+            {
+              "q": "Cosa non ti è piaciuto?",
+              "help": {
+                "starter": [
+                  "Non mi è piaciuto …"
+                ],
+                "structures": [
+                  "purtroppo"
+                ],
+                "lexicon": [
+                  "troppa gente",
+                  "il tempo",
+                  "il rumore"
+                ]
+              }
+            },
+            {
+              "q": "Torneresti nello stesso posto?",
+              "help": {
+                "starter": [
+                  "Sì, ci tornerei.",
+                  "No, preferisco …"
+                ],
+                "structures": [
+                  "un’altra volta"
+                ],
+                "lexicon": [
+                  "tornare",
+                  "scegliere",
+                  "visitare"
+                ]
+              }
+            }
+          ]
+        },
+
+        {
+          "id": "casa",
+          "label": "La casa",
+          "cards": [
+            {
+              "q": "Abiti in una casa o in un appartamento?",
+              "help": {
+                "starter": [
+                  "Abito in …"
+                ],
+                "structures": [
+                  "al centro",
+                  "in periferia"
+                ],
+                "lexicon": [
+                  "casa",
+                  "appartamento"
+                ]
+              }
+            },
+            {
+              "q": "Com’è la tua casa?",
+              "help": {
+                "starter": [
+                  "La mia casa è …"
+                ],
+                "structures": [
+                  "abbastanza",
+                  "molto"
+                ],
+                "lexicon": [
+                  "grande",
+                  "piccola",
+                  "luminosa"
+                ]
+              }
+            },
+            {
+              "q": "Quante stanze ci sono?",
+              "help": {
+                "starter": [
+                  "Ci sono … stanze."
+                ],
+                "structures": [],
+                "lexicon": [
+                  "stanza",
+                  "camera",
+                  "bagno"
+                ]
+              }
+            },
+            {
+              "q": "Qual è la tua stanza preferita?",
+              "help": {
+                "starter": [
+                  "La mia stanza preferita è …"
+                ],
+                "structures": [
+                  "perché"
+                ],
+                "lexicon": [
+                  "cucina",
+                  "salotto",
+                  "camera da letto"
+                ]
+              }
+            }
+          ]
+        },
+
+        {
+          "id": "giornata",
+          "label": "La giornata",
+          "cards": [
+            {
+              "q": "A che ora ti svegli di solito?",
+              "help": {
+                "starter": [
+                  "Mi sveglio alle …"
+                ],
+                "structures": [
+                  "di solito"
+                ],
+                "lexicon": [
+                  "svegliarsi"
+                ]
+              }
+            },
+            {
+              "q": "Che cosa fai la mattina?",
+              "help": {
+                "starter": [
+                  "La mattina …"
+                ],
+                "structures": [
+                  "prima … poi …"
+                ],
+                "lexicon": [
+                  "colazione",
+                  "lavoro",
+                  "studio"
+                ]
+              }
+            },
+            {
+              "q": "Che cosa fai nel tempo libero?",
+              "help": {
+                "starter": [
+                  "Nel tempo libero mi piace …"
+                ],
+                "structures": [],
+                "lexicon": [
+                  "leggere",
+                  "fare sport",
+                  "ascoltare musica"
+                ]
+              }
+            }
+          ]
+        },
+
+        {
+          "id": "cibo",
+          "label": "Cibo e bevande",
+          "cards": [
+            {
+              "q": "Qual è il tuo piatto preferito?",
+              "help": {
+                "starter": [
+                  "Il mio piatto preferito è …"
+                ],
+                "structures": [],
+                "lexicon": [
+                  "pasta",
+                  "pizza",
+                  "riso"
+                ]
+              }
+            },
+            {
+              "q": "Ti piace cucinare?",
+              "help": {
+                "starter": [
+                  "Sì, mi piace.",
+                  "No, non molto."
+                ],
+                "structures": [
+                  "a casa"
+                ],
+                "lexicon": [
+                  "cucinare"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "advanced",
+      "label": "Livello avanzato",
+      "topics": [
+        {
+          "id": "routine",
+          "label": "Abitudini e routine",
+          "cards": [
+            {
+              "q": "Quale abitudine quotidiana vorresti cambiare e perché?",
+              "help": {
+                "starter": [
+                  "Vorrei cambiare …",
+                  "Mi sono accorto/a che …"
+                ],
+                "structures": [
+                  "da un lato … dall’altro …",
+                  "per questo motivo"
+                ],
+                "lexicon": [
+                  "abitudine",
+                  "disciplina",
+                  "equilibrio"
+                ]
+              }
+            },
+            {
+              "q": "Racconta una giornata particolarmente stressante.",
+              "help": {
+                "starter": [
+                  "È stata una giornata in cui …"
+                ],
+                "structures": [
+                  "all’inizio … poi … alla fine …"
+                ],
+                "lexicon": [
+                  "stress",
+                  "pressione",
+                  "responsabilità"
+                ]
+              }
+            }
+          ]
+        },
+
+        {
+          "id": "opinioni",
+          "label": "Opinioni e società",
+          "cards": [
+            {
+              "q": "Secondo te, è meglio vivere in città o in campagna?",
+              "help": {
+                "starter": [
+                  "Secondo me …",
+                  "Penso che …"
+                ],
+                "structures": [
+                  "da un lato …",
+                  "tuttavia"
+                ],
+                "lexicon": [
+                  "qualità della vita",
+                  "traffico",
+                  "tranquillità"
+                ]
+              }
+            }
+          ]
+        },
+
+        {
+          "id": "viaggi",
+          "label": "Viaggi e cultura",
+          "cards": [
+            {
+              "q": "C’è un viaggio che ti ha cambiato la prospettiva? Perché?",
+              "help": {
+                "starter": [
+                  "Un viaggio che mi ha colpito è …"
+                ],
+                "structures": [
+                  "mi ha fatto capire che …"
+                ],
+                "lexicon": [
+                  "esperienza",
+                  "cultura",
+                  "prospettiva"
+                ]
+              }
+            }
+          ]
+        },
+
+        {
+          "id": "lavoro",
+          "label": "Lavoro e futuro",
+          "cards": [
+            {
+              "q": "Che cosa cerchi in un lavoro ideale?",
+              "help": {
+                "starter": [
+                  "Per me è importante …"
+                ],
+                "structures": [
+                  "soprattutto",
+                  "a lungo termine"
+                ],
+                "lexicon": [
+                  "motivazione",
+                  "carriera",
+                  "equilibrio"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
